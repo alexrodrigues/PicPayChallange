@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121E92226258D100BAB6D1 /* AppDelegate.swift */; };
+		04121E95226258D100BAB6D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121E94226258D100BAB6D1 /* ViewController.swift */; };
+		04121E98226258D100BAB6D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04121E96226258D100BAB6D1 /* Main.storyboard */; };
+		04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04121E99226258D300BAB6D1 /* Assets.xcassets */; };
+		04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */; };
+		04121EA8226258D300BAB6D1 /* PicPayChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121EA7226258D300BAB6D1 /* PicPayChallangeTests.swift */; };
+		04121EB3226258D300BAB6D1 /* PicPayChallangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121EB2226258D300BAB6D1 /* PicPayChallangeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04121EA4226258D300BAB6D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04121E87226258D100BAB6D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04121E8E226258D100BAB6D1;
+			remoteInfo = PicPayChallange;
+		};
+		04121EAF226258D300BAB6D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04121E87226258D100BAB6D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04121E8E226258D100BAB6D1;
+			remoteInfo = PicPayChallange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04121E8F226258D100BAB6D1 /* PicPayChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04121E92226258D100BAB6D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04121E94226258D100BAB6D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04121E97226258D100BAB6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04121E99226258D300BAB6D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04121E9C226258D300BAB6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04121E9E226258D300BAB6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04121EA3226258D300BAB6D1 /* PicPayChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicPayChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04121EA7226258D300BAB6D1 /* PicPayChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicPayChallangeTests.swift; sourceTree = "<group>"; };
+		04121EA9226258D300BAB6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04121EAE226258D300BAB6D1 /* PicPayChallangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicPayChallangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04121EB2226258D300BAB6D1 /* PicPayChallangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicPayChallangeUITests.swift; sourceTree = "<group>"; };
+		04121EB4226258D300BAB6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04121E8C226258D100BAB6D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04121EA0226258D300BAB6D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04121EAB226258D300BAB6D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04121E86226258D100BAB6D1 = {
+			isa = PBXGroup;
+			children = (
+				04121E91226258D100BAB6D1 /* PicPayChallange */,
+				04121EA6226258D300BAB6D1 /* PicPayChallangeTests */,
+				04121EB1226258D300BAB6D1 /* PicPayChallangeUITests */,
+				04121E90226258D100BAB6D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04121E90226258D100BAB6D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04121E8F226258D100BAB6D1 /* PicPayChallange.app */,
+				04121EA3226258D300BAB6D1 /* PicPayChallangeTests.xctest */,
+				04121EAE226258D300BAB6D1 /* PicPayChallangeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04121E91226258D100BAB6D1 /* PicPayChallange */ = {
+			isa = PBXGroup;
+			children = (
+				04121E92226258D100BAB6D1 /* AppDelegate.swift */,
+				04121E94226258D100BAB6D1 /* ViewController.swift */,
+				04121E96226258D100BAB6D1 /* Main.storyboard */,
+				04121E99226258D300BAB6D1 /* Assets.xcassets */,
+				04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */,
+				04121E9E226258D300BAB6D1 /* Info.plist */,
+			);
+			path = PicPayChallange;
+			sourceTree = "<group>";
+		};
+		04121EA6226258D300BAB6D1 /* PicPayChallangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				04121EA7226258D300BAB6D1 /* PicPayChallangeTests.swift */,
+				04121EA9226258D300BAB6D1 /* Info.plist */,
+			);
+			path = PicPayChallangeTests;
+			sourceTree = "<group>";
+		};
+		04121EB1226258D300BAB6D1 /* PicPayChallangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04121EB2226258D300BAB6D1 /* PicPayChallangeUITests.swift */,
+				04121EB4226258D300BAB6D1 /* Info.plist */,
+			);
+			path = PicPayChallangeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04121E8E226258D100BAB6D1 /* PicPayChallange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04121EB7226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallange" */;
+			buildPhases = (
+				04121E8B226258D100BAB6D1 /* Sources */,
+				04121E8C226258D100BAB6D1 /* Frameworks */,
+				04121E8D226258D100BAB6D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicPayChallange;
+			productName = PicPayChallange;
+			productReference = 04121E8F226258D100BAB6D1 /* PicPayChallange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04121EA2226258D300BAB6D1 /* PicPayChallangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04121EBA226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallangeTests" */;
+			buildPhases = (
+				04121E9F226258D300BAB6D1 /* Sources */,
+				04121EA0226258D300BAB6D1 /* Frameworks */,
+				04121EA1226258D300BAB6D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04121EA5226258D300BAB6D1 /* PBXTargetDependency */,
+			);
+			name = PicPayChallangeTests;
+			productName = PicPayChallangeTests;
+			productReference = 04121EA3226258D300BAB6D1 /* PicPayChallangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04121EAD226258D300BAB6D1 /* PicPayChallangeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04121EBD226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallangeUITests" */;
+			buildPhases = (
+				04121EAA226258D300BAB6D1 /* Sources */,
+				04121EAB226258D300BAB6D1 /* Frameworks */,
+				04121EAC226258D300BAB6D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04121EB0226258D300BAB6D1 /* PBXTargetDependency */,
+			);
+			name = PicPayChallangeUITests;
+			productName = PicPayChallangeUITests;
+			productReference = 04121EAE226258D300BAB6D1 /* PicPayChallangeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04121E87226258D100BAB6D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Alex Rodrigues";
+				TargetAttributes = {
+					04121E8E226258D100BAB6D1 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					04121EA2226258D300BAB6D1 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 04121E8E226258D100BAB6D1;
+					};
+					04121EAD226258D300BAB6D1 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 04121E8E226258D100BAB6D1;
+					};
+				};
+			};
+			buildConfigurationList = 04121E8A226258D100BAB6D1 /* Build configuration list for PBXProject "PicPayChallange" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04121E86226258D100BAB6D1;
+			productRefGroup = 04121E90226258D100BAB6D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04121E8E226258D100BAB6D1 /* PicPayChallange */,
+				04121EA2226258D300BAB6D1 /* PicPayChallangeTests */,
+				04121EAD226258D300BAB6D1 /* PicPayChallangeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04121E8D226258D100BAB6D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */,
+				04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */,
+				04121E98226258D100BAB6D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04121EA1226258D300BAB6D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04121EAC226258D300BAB6D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04121E8B226258D100BAB6D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04121E95226258D100BAB6D1 /* ViewController.swift in Sources */,
+				04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04121E9F226258D300BAB6D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04121EA8226258D300BAB6D1 /* PicPayChallangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04121EAA226258D300BAB6D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04121EB3226258D300BAB6D1 /* PicPayChallangeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04121EA5226258D300BAB6D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04121E8E226258D100BAB6D1 /* PicPayChallange */;
+			targetProxy = 04121EA4226258D300BAB6D1 /* PBXContainerItemProxy */;
+		};
+		04121EB0226258D300BAB6D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04121E8E226258D100BAB6D1 /* PicPayChallange */;
+			targetProxy = 04121EAF226258D300BAB6D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04121E96226258D100BAB6D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04121E97226258D100BAB6D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04121E9C226258D300BAB6D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04121EB5226258D300BAB6D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04121EB6226258D300BAB6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04121EB8226258D300BAB6D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ28CBRTR9;
+				INFOPLIST_FILE = PicPayChallange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04121EB9226258D300BAB6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ28CBRTR9;
+				INFOPLIST_FILE = PicPayChallange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04121EBB226258D300BAB6D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ28CBRTR9;
+				INFOPLIST_FILE = PicPayChallangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PicPayChallange.app/PicPayChallange";
+			};
+			name = Debug;
+		};
+		04121EBC226258D300BAB6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ28CBRTR9;
+				INFOPLIST_FILE = PicPayChallangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PicPayChallange.app/PicPayChallange";
+			};
+			name = Release;
+		};
+		04121EBE226258D300BAB6D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ28CBRTR9;
+				INFOPLIST_FILE = PicPayChallangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PicPayChallange;
+			};
+			name = Debug;
+		};
+		04121EBF226258D300BAB6D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ28CBRTR9;
+				INFOPLIST_FILE = PicPayChallangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PicPayChallange;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04121E8A226258D100BAB6D1 /* Build configuration list for PBXProject "PicPayChallange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04121EB5226258D300BAB6D1 /* Debug */,
+				04121EB6226258D300BAB6D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04121EB7226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04121EB8226258D300BAB6D1 /* Debug */,
+				04121EB9226258D300BAB6D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04121EBA226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04121EBB226258D300BAB6D1 /* Debug */,
+				04121EBC226258D300BAB6D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04121EBD226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallangeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04121EBE226258D300BAB6D1 /* Debug */,
+				04121EBF226258D300BAB6D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04121E87226258D100BAB6D1 /* Project object */;
+}
