@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import RxCocoa
 
 class ContactsViewController: UIViewController, ViewConfiguration {
     
     // MARK: - Variables
     
-    private var searchController: UISearchController = {
+    private lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.searchBar.placeholder = "Search Contacts"
         return controller
+    }()
+    
+    private lazy var contactsTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = .clear
+        return tableView
     }()
     
     // MARK: - Outlets
@@ -47,10 +55,14 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     }
     
     func setupViewHierarchy() {
-        
+        view.addSubview(contactsTableView)
     }
     
     func setupConstraints() {
-        
+        contactsTableView
+            .topAnchor(equalTo: view.topAnchor)
+            .bottomAnchor(equalTo: view.bottomAnchor)
+            .leadingAnchor(equalTo: view.leadingAnchor)
+            .trailingAnchor(equalTo: view.trailingAnchor)
     }
 }
