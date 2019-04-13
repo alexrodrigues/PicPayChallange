@@ -12,7 +12,11 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     
     // MARK: - Variables
     
-    
+    private var searchController: UISearchController = {
+        let controller = UISearchController(searchResultsController: nil)
+        controller.searchBar.placeholder = "Search Contacts"
+        return controller
+    }()
     
     // MARK: - Outlets
     
@@ -38,7 +42,8 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     
     func configureViews() {
         self.view.backgroundColor = .black
-        
+        navigationItem.hidesSearchBarWhenScrolling = true
+        navigationItem.searchController = searchController
     }
     
     func setupViewHierarchy() {
