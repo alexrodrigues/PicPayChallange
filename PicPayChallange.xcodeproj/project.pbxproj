@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121E92226258D100BAB6D1 /* AppDelegate.swift */; };
-		04121E98226258D100BAB6D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04121E96226258D100BAB6D1 /* Main.storyboard */; };
 		04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04121E99226258D300BAB6D1 /* Assets.xcassets */; };
 		04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */; };
 		04121EA8226258D300BAB6D1 /* PicPayChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121EA7226258D300BAB6D1 /* PicPayChallangeTests.swift */; };
@@ -16,6 +15,11 @@
 		04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */; };
 		04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */; };
 		04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */; };
+		04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFC227DCD58006B1D50 /* Api.swift */; };
+		04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */; };
+		04BB4E03227DCE29006B1D50 /* Error+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */; };
+		04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E04227DCE8C006B1D50 /* URLRequest+Extensions.swift */; };
+		04BB4E07227DD153006B1D50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E06227DD153006B1D50 /* User.swift */; };
 		5C137E8ABF597C44DF381F91 /* Pods_PicPayChallangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1472683F7829A56C8EF2DB /* Pods_PicPayChallangeUITests.framework */; };
 		C76EA579F13E870782021755 /* Pods_PicPayChallangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D426E71DDDBCD676CC540061 /* Pods_PicPayChallangeTests.framework */; };
 		EE186E19D6134B7761C705A6 /* Pods_PicPayChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9485D7710BD870384BA902BE /* Pods_PicPayChallange.framework */; };
@@ -41,7 +45,6 @@
 /* Begin PBXFileReference section */
 		04121E8F226258D100BAB6D1 /* PicPayChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04121E92226258D100BAB6D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04121E97226258D100BAB6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04121E99226258D300BAB6D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04121E9C226258D300BAB6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04121E9E226258D300BAB6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +57,11 @@
 		04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+		04BB4DFC227DCD58006B1D50 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDefinitions.swift; sourceTree = "<group>"; };
+		04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Extensions.swift"; sourceTree = "<group>"; };
+		04BB4E04227DCE8C006B1D50 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		04BB4E06227DD153006B1D50 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		582B73A11816BD31C00AE29E /* Pods-PicPayChallangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayChallangeTests.release.xcconfig"; path = "Target Support Files/Pods-PicPayChallangeTests/Pods-PicPayChallangeTests.release.xcconfig"; sourceTree = "<group>"; };
 		58900A169793DAC2B9100B23 /* Pods-PicPayChallangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayChallangeUITests.release.xcconfig"; path = "Target Support Files/Pods-PicPayChallangeUITests/Pods-PicPayChallangeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8BF6771DFC7FF3FD5D630EEF /* Pods-PicPayChallangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayChallangeUITests.debug.xcconfig"; path = "Target Support Files/Pods-PicPayChallangeUITests/Pods-PicPayChallangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +132,8 @@
 				04121EC122625CE500BAB6D1 /* model */,
 				04121EC222625CEC00BAB6D1 /* view model */,
 				04121EC622625D1B00BAB6D1 /* ui */,
+				04BB4E00227DCE05006B1D50 /* util */,
 				04121EC922625D4300BAB6D1 /* resources */,
-				04121E96226258D100BAB6D1 /* Main.storyboard */,
 				04121E9E226258D300BAB6D1 /* Info.plist */,
 			);
 			path = PicPayChallange;
@@ -152,6 +160,8 @@
 		04121EC022625CDE00BAB6D1 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				04BB4DFC227DCD58006B1D50 /* Api.swift */,
+				04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -159,6 +169,7 @@
 		04121EC122625CE500BAB6D1 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				04BB4E06227DD153006B1D50 /* User.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -236,6 +247,23 @@
 			path = "view coding";
 			sourceTree = "<group>";
 		};
+		04BB4E00227DCE05006B1D50 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				04BB4E01227DCE29006B1D50 /* extensions */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		04BB4E01227DCE29006B1D50 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */,
+				04BB4E04227DCE8C006B1D50 /* URLRequest+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		D86F73F9C4BF54E40762B8F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +295,7 @@
 			buildConfigurationList = 04121EB7226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallange" */;
 			buildPhases = (
 				AB5D18E135337E8E0CECB424 /* [CP] Check Pods Manifest.lock */,
+				04BB4E08227DD1CF006B1D50 /* SwiftLint */,
 				04121E8B226258D100BAB6D1 /* Sources */,
 				04121E8C226258D100BAB6D1 /* Frameworks */,
 				04121E8D226258D100BAB6D1 /* Resources */,
@@ -370,7 +399,6 @@
 			files = (
 				04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */,
 				04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */,
-				04121E98226258D100BAB6D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +440,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		04BB4E08227DD1CF006B1D50 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		148BD8029159BAE2CB3AF421 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -514,9 +560,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */,
 				04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */,
 				04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */,
 				04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */,
+				04BB4E03227DCE29006B1D50 /* Error+Extensions.swift in Sources */,
+				04BB4E07227DD153006B1D50 /* User.swift in Sources */,
+				04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */,
+				04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */,
 				04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,14 +604,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04121E96226258D100BAB6D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04121E97226258D100BAB6D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
