@@ -9,6 +9,16 @@
 import UIKit
 
 extension URLRequest {
+    
+    mutating func setHttpMethod(_ method: ApiDefinitions.Method) {
+        switch method {
+        case .get:
+            self.httpMethod = "GET"
+        case .post:
+            self.httpMethod = "POST"
+        }
+    }
+    
     mutating func defaultJsonRequest() -> URLRequest {
         self.addValue("application/json", forHTTPHeaderField: "Content-Type")
         self.addValue("application/json", forHTTPHeaderField: "Accept")

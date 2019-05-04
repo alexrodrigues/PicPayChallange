@@ -9,11 +9,15 @@
 import Foundation
 import RxSwift
 
-class Api {
+class Api<T: Decodable> {
     
+    // MARK: - Variables
+
     private let errorMessage = "Something went wrong on fetching data"
     
-    func requestObject<T: Decodable>(urlString: String) -> Observable<T> {
+    // MARK: - Mehods
+    
+    func request(with urlString: String, method: ApiDefinitions.Method) -> Observable<T> {
         var remoteTask: URLSessionTask!
         guard let url = URL(string: urlString)  else {
             return Observable.error(MyError(msg: self.errorMessage))
@@ -21,6 +25,7 @@ class Api {
         return Observable<T>.create({ observer -> Disposable in
             var urlRequest = URLRequest(url: url)
             urlRequest = urlRequest.defaultJsonRequest()
+            urlRequest.setHttpMethod(method)
             remoteTask = URLSession.shared.dataTask(with: urlRequest) { data, _ , error in
                 guard let dataReceived = data else {
                     observer.onError(MyError(msg: self.errorMessage))
