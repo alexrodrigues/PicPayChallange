@@ -8,6 +8,7 @@
 
 import UIKit
 import RxCocoa
+import RxSwift
 
 class ContactsViewController: UIViewController, ViewConfiguration {
     
@@ -26,9 +27,8 @@ class ContactsViewController: UIViewController, ViewConfiguration {
         return tableView
     }()
     
-    // MARK: - Outlets
-    
-    // MARK: - Actions
+    private var contactViewModel: ContactsViewModel!
+    private var disposeBag = DisposeBag()
     
     // MARK: - Life Cycle
     
@@ -38,12 +38,32 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        contactViewModel = ContactsViewModel()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bind()
         setupViews()
+        contactViewModel.fetch()
+    }
+    
+    // MARK: - ViewModel Binding
+    
+    func bind() {
+        contactViewModel.contacts
+                .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { viewModels in
+                if viewModels.isEmpty { return }
+                print(viewModels.debugDescription)
+            }).disposed(by: disposeBag)
+        
+        contactViewModel.errorMessage
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { message in
+                if (message.isEmpty) { return }
+                print(message)
+            }).disposed(by: disposeBag)
     }
     
     // MARK: - View Coding
