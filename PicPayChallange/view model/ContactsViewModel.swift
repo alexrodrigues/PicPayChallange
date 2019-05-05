@@ -31,4 +31,8 @@ class ContactsViewModel {
                 self.errorMessage.accept(error.localizedDescription)
             }).disposed(by: disposeBag)
     }
+    
+    func filter(basedOn text: String) -> [UserViewModel] {
+        return contacts.value.filter { $0.name.contains(text) }
+    }
 }
