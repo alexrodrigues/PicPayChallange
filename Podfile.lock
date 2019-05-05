@@ -1,5 +1,6 @@
 PODS:
   - Kingfisher (5.3.1)
+  - Reveal-SDK (21)
   - RxBlocking (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxCocoa (4.5.0):
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Kingfisher (~> 5.0)
+  - Reveal-SDK
   - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
@@ -20,6 +22,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Kingfisher
+    - Reveal-SDK
     - RxBlocking
     - RxCocoa
     - RxSwift
@@ -28,12 +31,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  Reveal-SDK: 3523e0eb7c562811c51bb71da6e523a6373702c8
   RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 
-PODFILE CHECKSUM: caf5fa46a118f741ff01b5434b1359e01cc43084
+PODFILE CHECKSUM: 644dee6eb85116dbe464308aedb7e4d2c398f17a
 
 COCOAPODS: 1.6.1
