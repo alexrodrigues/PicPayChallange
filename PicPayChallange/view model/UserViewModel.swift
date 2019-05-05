@@ -16,6 +16,10 @@ class UserViewModel {
         return _user.name ?? ""
     }
     
+    var username: String {
+        return _user.username ?? ""
+    }
+    
     var imageUrl: URL? {
         if let urlString = _user.img, let url = URL(string: urlString) {
             return url

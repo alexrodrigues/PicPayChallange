@@ -7,6 +7,9 @@ target 'PicPayChallange' do
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
   pod 'SwiftLint'
+  pod 'Kingfisher', '~> 5.0'
+  
+  pod 'Reveal-SDK', :configurations => ['Debug']
 
   target 'PicPayChallangeTests' do
     inherit! :search_paths

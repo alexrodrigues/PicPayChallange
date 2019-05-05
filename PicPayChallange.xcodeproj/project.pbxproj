@@ -25,6 +25,7 @@
 		04BB4E0E227DD40B006B1D50 /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E0D227DD40B006B1D50 /* UserFactory.swift */; };
 		04BB4E11227DD6E1006B1D50 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E10227DD6E1006B1D50 /* UserViewModel.swift */; };
 		04BB4E13227DD8BD006B1D50 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E12227DD8BD006B1D50 /* ContactsViewModel.swift */; };
+		04BB4E16227DE547006B1D50 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E15227DE547006B1D50 /* ContactCell.swift */; };
 		5C137E8ABF597C44DF381F91 /* Pods_PicPayChallangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1472683F7829A56C8EF2DB /* Pods_PicPayChallangeUITests.framework */; };
 		C76EA579F13E870782021755 /* Pods_PicPayChallangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D426E71DDDBCD676CC540061 /* Pods_PicPayChallangeTests.framework */; };
 		EE186E19D6134B7761C705A6 /* Pods_PicPayChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9485D7710BD870384BA902BE /* Pods_PicPayChallange.framework */; };
@@ -72,6 +73,7 @@
 		04BB4E0D227DD40B006B1D50 /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
 		04BB4E10227DD6E1006B1D50 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		04BB4E12227DD8BD006B1D50 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		04BB4E15227DE547006B1D50 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		582B73A11816BD31C00AE29E /* Pods-PicPayChallangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayChallangeTests.release.xcconfig"; path = "Target Support Files/Pods-PicPayChallangeTests/Pods-PicPayChallangeTests.release.xcconfig"; sourceTree = "<group>"; };
 		58900A169793DAC2B9100B23 /* Pods-PicPayChallangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayChallangeUITests.release.xcconfig"; path = "Target Support Files/Pods-PicPayChallangeUITests/Pods-PicPayChallangeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8BF6771DFC7FF3FD5D630EEF /* Pods-PicPayChallangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayChallangeUITests.debug.xcconfig"; path = "Target Support Files/Pods-PicPayChallangeUITests/Pods-PicPayChallangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,9 +215,9 @@
 		04121EC622625D1B00BAB6D1 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				04121ECD22625FBE00BAB6D1 /* view coding */,
 				04121EC722625D2200BAB6D1 /* view controller */,
 				04121ECC22625D6F00BAB6D1 /* view */,
+				04121ECD22625FBE00BAB6D1 /* view coding */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -240,6 +242,7 @@
 		04121ECC22625D6F00BAB6D1 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				04BB4E14227DE538006B1D50 /* cell */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -277,6 +280,14 @@
 				04BB4E12227DD8BD006B1D50 /* ContactsViewModel.swift */,
 			);
 			path = "view model";
+			sourceTree = "<group>";
+		};
+		04BB4E14227DE538006B1D50 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				04BB4E15227DE547006B1D50 /* ContactCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		D86F73F9C4BF54E40762B8F1 /* Pods */ = {
@@ -553,6 +564,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PicPayChallange/Pods-PicPayChallange-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-21/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -560,6 +573,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -575,6 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BB4E16227DE547006B1D50 /* ContactCell.swift in Sources */,
 				04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */,
 				04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */,
 				04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */,
