@@ -28,7 +28,7 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     }()
     
     private lazy var activityIndicatorView: UIActivityIndicatorView = {
-        let indicator = UIActivityIndicatorView(style: .gray)
+        let indicator = UIActivityIndicatorView(style: .white)
         indicator.translatesAutoresizingMaskIntoConstraints = false
         indicator.hidesWhenStopped = true
         return indicator
@@ -56,6 +56,7 @@ class ContactsViewController: UIViewController, ViewConfiguration {
         bind()
         setupViews()
         registerCells()
+        activityIndicatorView.startAnimating()
         contactViewModel.fetch()
     }
     
