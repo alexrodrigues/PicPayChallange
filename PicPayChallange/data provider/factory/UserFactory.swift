@@ -16,6 +16,7 @@ class UserFactory {
     
     func factor(this users: [User]?) -> [UserViewModel] {
         guard let noNilUsers = users else { return [UserViewModel]() }
-        return noNilUsers.map { UserViewModel(with: $0) }
+        let response = noNilUsers.map { UserViewModel(with: $0) }
+        return response.sorted { $0.name < $1.name }
     }
 }

@@ -15,6 +15,7 @@
 		04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */; };
 		04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */; };
 		04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */; };
+		04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04889891227F37FB006F431E /* SearchController+Extensions.swift */; };
 		04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFC227DCD58006B1D50 /* Api.swift */; };
 		04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */; };
 		04BB4E03227DCE29006B1D50 /* Error+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */; };
@@ -63,6 +64,7 @@
 		04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+		04889891227F37FB006F431E /* SearchController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchController+Extensions.swift"; sourceTree = "<group>"; };
 		04BB4DFC227DCD58006B1D50 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDefinitions.swift; sourceTree = "<group>"; };
 		04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Extensions.swift"; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */,
 				04BB4E04227DCE8C006B1D50 /* URLRequest+Extensions.swift */,
+				04889891227F37FB006F431E /* SearchController+Extensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				04BB4E16227DE547006B1D50 /* ContactCell.swift in Sources */,
 				04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */,
 				04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */,
+				04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */,
 				04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */,
 				04BB4E13227DD8BD006B1D50 /* ContactsViewModel.swift in Sources */,
 				04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */,
