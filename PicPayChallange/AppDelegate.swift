@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private lazy var contactsViewController: ContactsViewController = {
        let contactVC = ContactsViewController()
-        contactVC.title = "Contacts"
+        contactVC.title = "Contatos"
         return contactVC
     }()
 

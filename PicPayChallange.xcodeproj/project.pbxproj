@@ -20,6 +20,10 @@
 		046FB5A122827BF100164A33 /* ContactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5A022827BF100164A33 /* ContactsCoordinator.swift */; };
 		046FB5A522827CA300164A33 /* NewCardIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5A422827CA300164A33 /* NewCardIntroViewController.swift */; };
 		046FB5A822827DAF00164A33 /* NewCardIntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FB5A722827DAF00164A33 /* NewCardIntroViewController.xib */; };
+		046FB5AA2282829400164A33 /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5A92282829400164A33 /* NewCardViewController.swift */; };
+		046FB5AC228282FA00164A33 /* NewCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FB5AB228282FA00164A33 /* NewCardViewController.xib */; };
+		046FB5AE2282835E00164A33 /* NewCardIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5AD2282835E00164A33 /* NewCardIntroViewModel.swift */; };
+		046FB5B02282839D00164A33 /* NewCardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5AF2282839D00164A33 /* NewCardCoordinator.swift */; };
 		04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04889891227F37FB006F431E /* SearchController+Extensions.swift */; };
 		04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFC227DCD58006B1D50 /* Api.swift */; };
 		04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */; };
@@ -74,6 +78,10 @@
 		046FB5A022827BF100164A33 /* ContactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCoordinator.swift; sourceTree = "<group>"; };
 		046FB5A422827CA300164A33 /* NewCardIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardIntroViewController.swift; sourceTree = "<group>"; };
 		046FB5A722827DAF00164A33 /* NewCardIntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCardIntroViewController.xib; sourceTree = "<group>"; };
+		046FB5A92282829400164A33 /* NewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
+		046FB5AB228282FA00164A33 /* NewCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCardViewController.xib; sourceTree = "<group>"; };
+		046FB5AD2282835E00164A33 /* NewCardIntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardIntroViewModel.swift; sourceTree = "<group>"; };
+		046FB5AF2282839D00164A33 /* NewCardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardCoordinator.swift; sourceTree = "<group>"; };
 		04889891227F37FB006F431E /* SearchController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchController+Extensions.swift"; sourceTree = "<group>"; };
 		04BB4DFC227DCD58006B1D50 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDefinitions.swift; sourceTree = "<group>"; };
@@ -275,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				046FB5A022827BF100164A33 /* ContactsCoordinator.swift */,
+				046FB5AF2282839D00164A33 /* NewCardCoordinator.swift */,
 			);
 			path = coordinator;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				046FB5A422827CA300164A33 /* NewCardIntroViewController.swift */,
+				046FB5A92282829400164A33 /* NewCardViewController.swift */,
 			);
 			path = "new card";
 			sourceTree = "<group>";
@@ -299,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				046FB5A722827DAF00164A33 /* NewCardIntroViewController.xib */,
+				046FB5AB228282FA00164A33 /* NewCardViewController.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -328,6 +339,7 @@
 			children = (
 				04BB4E10227DD6E1006B1D50 /* UserViewModel.swift */,
 				04BB4E12227DD8BD006B1D50 /* ContactsViewModel.swift */,
+				046FB5AD2282835E00164A33 /* NewCardIntroViewModel.swift */,
 			);
 			path = "view model";
 			sourceTree = "<group>";
@@ -474,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */,
+				046FB5AC228282FA00164A33 /* NewCardViewController.xib in Resources */,
 				046FB5A822827DAF00164A33 /* NewCardIntroViewController.xib in Resources */,
 				04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */,
 			);
@@ -639,7 +652,10 @@
 			files = (
 				04BB4E16227DE547006B1D50 /* ContactCell.swift in Sources */,
 				04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */,
+				046FB5B02282839D00164A33 /* NewCardCoordinator.swift in Sources */,
+				046FB5AA2282829400164A33 /* NewCardViewController.swift in Sources */,
 				04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */,
+				046FB5AE2282835E00164A33 /* NewCardIntroViewModel.swift in Sources */,
 				04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */,
 				046FB59E2282788900164A33 /* ViewController+Extensions.swift in Sources */,
 				04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */,

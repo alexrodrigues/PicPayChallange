@@ -12,6 +12,8 @@ class NewCardIntroViewController: UIViewController {
     
     // MARK: - Variables
     
+    private var viewModel: NewCardIntroViewModel!
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -20,7 +22,13 @@ class NewCardIntroViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        viewModel = NewCardIntroViewModel(with: navigationController)
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction func signUp() {
+        viewModel.navigate()
     }
 }
 
