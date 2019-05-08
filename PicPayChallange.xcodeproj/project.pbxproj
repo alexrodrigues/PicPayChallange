@@ -17,6 +17,9 @@
 		04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */; };
 		046FB59C2282779E00164A33 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB59B2282779E00164A33 /* String+Extensions.swift */; };
 		046FB59E2282788900164A33 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB59D2282788900164A33 /* ViewController+Extensions.swift */; };
+		046FB5A122827BF100164A33 /* ContactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5A022827BF100164A33 /* ContactsCoordinator.swift */; };
+		046FB5A522827CA300164A33 /* NewCardIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5A422827CA300164A33 /* NewCardIntroViewController.swift */; };
+		046FB5A822827DAF00164A33 /* NewCardIntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FB5A722827DAF00164A33 /* NewCardIntroViewController.xib */; };
 		04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04889891227F37FB006F431E /* SearchController+Extensions.swift */; };
 		04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFC227DCD58006B1D50 /* Api.swift */; };
 		04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */; };
@@ -68,6 +71,9 @@
 		04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
 		046FB59B2282779E00164A33 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		046FB59D2282788900164A33 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		046FB5A022827BF100164A33 /* ContactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCoordinator.swift; sourceTree = "<group>"; };
+		046FB5A422827CA300164A33 /* NewCardIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardIntroViewController.swift; sourceTree = "<group>"; };
+		046FB5A722827DAF00164A33 /* NewCardIntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCardIntroViewController.xib; sourceTree = "<group>"; };
 		04889891227F37FB006F431E /* SearchController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchController+Extensions.swift"; sourceTree = "<group>"; };
 		04BB4DFC227DCD58006B1D50 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDefinitions.swift; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 				04121EC022625CDE00BAB6D1 /* api */,
 				04121EC322625D0400BAB6D1 /* data provider */,
 				04121EC122625CE500BAB6D1 /* model */,
+				046FB59F22827BE000164A33 /* coordinator */,
 				04BB4E0F227DD6D2006B1D50 /* view model */,
 				04121EC622625D1B00BAB6D1 /* ui */,
 				04BB4E00227DCE05006B1D50 /* util */,
@@ -231,7 +238,8 @@
 		04121EC722625D2200BAB6D1 /* view controller */ = {
 			isa = PBXGroup;
 			children = (
-				04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */,
+				046FB5A222827C7400164A33 /* contacts  */,
+				046FB5A322827C8A00164A33 /* new card */,
 			);
 			path = "view controller";
 			sourceTree = "<group>";
@@ -239,6 +247,7 @@
 		04121EC922625D4300BAB6D1 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				046FB5A622827D9300164A33 /* xibs */,
 				04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */,
 				04121E99226258D300BAB6D1 /* Assets.xcassets */,
 			);
@@ -260,6 +269,38 @@
 				04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */,
 			);
 			path = "view coding";
+			sourceTree = "<group>";
+		};
+		046FB59F22827BE000164A33 /* coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				046FB5A022827BF100164A33 /* ContactsCoordinator.swift */,
+			);
+			path = coordinator;
+			sourceTree = "<group>";
+		};
+		046FB5A222827C7400164A33 /* contacts  */ = {
+			isa = PBXGroup;
+			children = (
+				04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */,
+			);
+			path = "contacts ";
+			sourceTree = "<group>";
+		};
+		046FB5A322827C8A00164A33 /* new card */ = {
+			isa = PBXGroup;
+			children = (
+				046FB5A422827CA300164A33 /* NewCardIntroViewController.swift */,
+			);
+			path = "new card";
+			sourceTree = "<group>";
+		};
+		046FB5A622827D9300164A33 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				046FB5A722827DAF00164A33 /* NewCardIntroViewController.xib */,
+			);
+			path = xibs;
 			sourceTree = "<group>";
 		};
 		04BB4E00227DCE05006B1D50 /* util */ = {
@@ -433,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */,
+				046FB5A822827DAF00164A33 /* NewCardIntroViewController.xib in Resources */,
 				04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,12 +646,14 @@
 				04BB4E13227DD8BD006B1D50 /* ContactsViewModel.swift in Sources */,
 				04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */,
 				04BB4E03227DCE29006B1D50 /* Error+Extensions.swift in Sources */,
+				046FB5A122827BF100164A33 /* ContactsCoordinator.swift in Sources */,
 				04BB4E07227DD153006B1D50 /* User.swift in Sources */,
 				04BB4E0A227DD349006B1D50 /* UserService.swift in Sources */,
 				04BB4E0E227DD40B006B1D50 /* UserFactory.swift in Sources */,
 				04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */,
 				046FB59C2282779E00164A33 /* String+Extensions.swift in Sources */,
 				04BB4E11227DD6E1006B1D50 /* UserViewModel.swift in Sources */,
+				046FB5A522827CA300164A33 /* NewCardIntroViewController.swift in Sources */,
 				04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */,
 				04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */,
 				04BB4E0C227DD373006B1D50 /* PicPayService.swift in Sources */,

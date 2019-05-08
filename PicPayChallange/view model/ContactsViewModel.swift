@@ -14,6 +14,7 @@ class ContactsViewModel {
     
     var contacts: [UserViewModel]
     private var userService: UserService
+    private var coordinator: ContactsCoordinator
     
     // MARK: - Typealias
     
@@ -21,9 +22,10 @@ class ContactsViewModel {
     
     // MARK: - Initializer
     
-    init() {
+    init(with navigationController: UINavigationController?) {
         contacts = [UserViewModel]()
         userService = UserService()
+        coordinator = ContactsCoordinator(with: navigationController)
     }
     
     // MARK: - Methods to query
@@ -42,5 +44,11 @@ class ContactsViewModel {
     
     func filter(basedOn text: String) -> [UserViewModel] {
         return contacts.filter { $0.name.contains(text) }
+    }
+    
+    // MARK: Navigation
+    
+    func navigate() {
+        coordinator.navigateToNewCardIntro()
     }
 }
