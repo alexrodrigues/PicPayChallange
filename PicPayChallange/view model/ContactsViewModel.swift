@@ -7,32 +7,40 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class ContactsViewModel {
     
-    // MARK: - Variables to Observe
+    // MARK: - Variables
     
-    var contacts = BehaviorRelay<[UserViewModel]>(value: [UserViewModel]())
-    var errorMessage = BehaviorRelay<String>(value: "")
+    var contacts: [UserViewModel]
+    private var userService: UserService
     
-    // MARK: - Variables private to this ViewModel
+    // MARK: - Typealias
     
-    private let disposeBag = DisposeBag()
+    typealias ContactViewModelCompletion = (_ success: Bool, _ errorMessage: String) -> Void
+    
+    // MARK: - Initializer
+    
+    init() {
+        contacts = [UserViewModel]()
+        userService = UserService()
+    }
     
     // MARK: - Methods to query
     
-    func fetch() {
-        UserService().fetch()
-            .subscribe(onNext: { viewModels in
-                self.contacts.accept(viewModels)
-            }, onError: { error in
-                self.errorMessage.accept(error.localizedDescription)
-            }).disposed(by: disposeBag)
+    func fetch(completion: @escaping ContactViewModelCompletion) {
+        userService.fetch { [weak self] viewModels, errorMessage in
+            guard let self = self else { return }
+            if errorMessage.isNotEmpty() {
+                completion(false, errorMessage)
+            } else {
+                self.contacts = viewModels
+                completion(true, "")
+            }
+        }
     }
     
     func filter(basedOn text: String) -> [UserViewModel] {
-        return contacts.value.filter { $0.name.contains(text) }
+        return contacts.filter { $0.name.contains(text) }
     }
 }

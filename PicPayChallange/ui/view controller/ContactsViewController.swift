@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class ContactsViewController: UIViewController, ViewConfiguration {
     
@@ -42,64 +40,50 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     // MARK: - Variables
     
     private var contactViewModel: ContactsViewModel!
-    private var disposeBag = DisposeBag()
     private let contactCellIdentifier = "ContactCell"
-    private var contacts = [UserViewModel]()
+    private var contactsCanFilter: [UserViewModel]!
     
     // MARK: - Life Cycle
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.initializeVariables()
     }
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        contactViewModel = ContactsViewModel()
+        self.initializeVariables()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
         setupViews()
         registerCells()
         fetch()
+    }
+    
+    private func initializeVariables() {
+        contactViewModel = ContactsViewModel()
+        contactsCanFilter = [UserViewModel]()
     }
     
     private func registerCells() {
         contactsTableView.register(ContactCell.self, forCellReuseIdentifier: contactCellIdentifier)
     }
     
-    // MARK: - ViewModel Binding
-    
-    func bind() {
-        contactViewModel.contacts
-                .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] viewModels in
-                guard let self = self else { return }
-                self.contacts = viewModels
-                self.presentContacts()
-            }).disposed(by: disposeBag)
-        
-        contactViewModel.errorMessage
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { message in
-                if (message.isEmpty) { return }
-                print(message)
-            }).disposed(by: disposeBag)
-    }
-    
     // MARK: - Presentation methods
-    
-    private func presentContacts() {
-        contactsTableView.reloadData()
-        activityIndicatorView.stopAnimating()
-        contactsTableView.isHidden = false
-    }
     
     private func fetch() {
         contactsTableView.isHidden = true
         activityIndicatorView.startAnimating()
-        contactViewModel.fetch()
+        contactViewModel.fetch { [weak self] (success, errorMessage) in
+            guard let self = self else { return }
+            if !success {
+                self.showErrorAlert(errorMessage)
+            } else {
+                self.presentContacts()
+            }
+        }
     }
     
     private func filter(basedOn text: String) {
@@ -112,13 +96,20 @@ class ContactsViewController: UIViewController, ViewConfiguration {
             savedState()
             return
         }
-        contacts = filtered
+        contactsCanFilter = filtered
         contactsTableView.reloadData()
     }
     
     private func savedState() {
-        contacts = contactViewModel.contacts.value
+        contactsCanFilter = contactViewModel.contacts
         contactsTableView.reloadData()
+    }
+    
+    private func presentContacts() {
+        contactsCanFilter = contactViewModel.contacts
+        contactsTableView.reloadData()
+        activityIndicatorView.stopAnimating()
+        contactsTableView.isHidden = false
     }
 }
 
@@ -126,12 +117,12 @@ class ContactsViewController: UIViewController, ViewConfiguration {
 
 extension ContactsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        return contactsCanFilter.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: contactCellIdentifier, for: indexPath) as? ContactCell else { return UITableViewCell() }
-        let viewModel = contacts[indexPath.row]
+        let viewModel = contactsCanFilter[indexPath.row]
         cell.setup(using: viewModel)
         return cell
     }

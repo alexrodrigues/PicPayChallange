@@ -15,6 +15,8 @@
 		04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */; };
 		04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */; };
 		04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */; };
+		046FB59C2282779E00164A33 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB59B2282779E00164A33 /* String+Extensions.swift */; };
+		046FB59E2282788900164A33 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB59D2282788900164A33 /* ViewController+Extensions.swift */; };
 		04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04889891227F37FB006F431E /* SearchController+Extensions.swift */; };
 		04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFC227DCD58006B1D50 /* Api.swift */; };
 		04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */; };
@@ -64,6 +66,8 @@
 		04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+		046FB59B2282779E00164A33 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		046FB59D2282788900164A33 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		04889891227F37FB006F431E /* SearchController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchController+Extensions.swift"; sourceTree = "<group>"; };
 		04BB4DFC227DCD58006B1D50 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		04BB4DFD227DCD58006B1D50 /* ApiDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDefinitions.swift; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 				04BB4E02227DCE29006B1D50 /* Error+Extensions.swift */,
 				04BB4E04227DCE8C006B1D50 /* URLRequest+Extensions.swift */,
 				04889891227F37FB006F431E /* SearchController+Extensions.swift */,
+				046FB59B2282779E00164A33 /* String+Extensions.swift */,
+				046FB59D2282788900164A33 /* ViewController+Extensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -541,16 +547,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PicPayChallangeTests/Pods-PicPayChallangeTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,8 +575,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PicPayChallange/Pods-PicPayChallange-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-21/iOS/RevealServer.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -578,8 +582,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -597,6 +599,7 @@
 				04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */,
 				04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */,
 				04889892227F37FB006F431E /* SearchController+Extensions.swift in Sources */,
+				046FB59E2282788900164A33 /* ViewController+Extensions.swift in Sources */,
 				04121E93226258D100BAB6D1 /* AppDelegate.swift in Sources */,
 				04BB4E13227DD8BD006B1D50 /* ContactsViewModel.swift in Sources */,
 				04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */,
@@ -605,6 +608,7 @@
 				04BB4E0A227DD349006B1D50 /* UserService.swift in Sources */,
 				04BB4E0E227DD40B006B1D50 /* UserFactory.swift in Sources */,
 				04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */,
+				046FB59C2282779E00164A33 /* String+Extensions.swift in Sources */,
 				04BB4E11227DD6E1006B1D50 /* UserViewModel.swift in Sources */,
 				04BB4DFE227DCD58006B1D50 /* Api.swift in Sources */,
 				04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */,

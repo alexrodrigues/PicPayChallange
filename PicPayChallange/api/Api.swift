@@ -7,46 +7,47 @@
 //
 
 import Foundation
-import RxSwift
+
+enum Result<T> {
+    case success(T)
+    case error(MyError)
+}
 
 class Api<T: Decodable> {
     
     // MARK: - Variables
 
     private let errorMessage = "Something went wrong on fetching data"
+    private var remoteTask: URLSessionTask!
+    
+    // MARK: - Typealias
+    
+    typealias ApiCompletion = (Result<T>) -> Void
     
     // MARK: - Mehods
     
-    func request(with urlString: String, method: ApiDefinitions.Method) -> Observable<T> {
-        var remoteTask: URLSessionTask!
+    func request(with urlString: String, method: ApiDefinitions.Method, completion: @escaping ApiCompletion) {
         guard let url = URL(string: urlString)  else {
-            return Observable.error(MyError(msg: self.errorMessage))
+            completion(.error(MyError(msg: self.errorMessage)))
+            return
         }
-        return Observable<T>.create({ observer -> Disposable in
-            var urlRequest = URLRequest(url: url)
-            urlRequest = urlRequest.defaultJsonRequest()
-            urlRequest.setHttpMethod(method)
-            remoteTask = URLSession.shared.dataTask(with: urlRequest) { data, _ , error in
-                guard let dataReceived = data else {
-                    observer.onError(MyError(msg: self.errorMessage))
-                    observer.onCompleted()
-                    return
-                }
-                do {
-                    let objectResponse = try JSONDecoder().decode(T.self, from: dataReceived)
-                    observer.onNext(objectResponse)
-                    observer.onCompleted()
-                } catch let error {
-                    observer.onError(MyError(msg: error.localizedDescription))
-                    observer.onCompleted()
-                }
+        var urlRequest = URLRequest(url: url)
+        urlRequest = urlRequest.defaultJsonRequest()
+        urlRequest.setHttpMethod(method)
+        remoteTask = URLSession.shared.dataTask(with: urlRequest) { data, _ , error in
+            guard let dataReceived = data else {
+                completion(.error(MyError(msg: self.errorMessage)))
+                return
             }
-            
-            remoteTask.resume()
-            
-            return Disposables.create {
-                remoteTask.cancel()
+            do {
+                let objectResponse = try JSONDecoder().decode(T.self, from: dataReceived)
+                completion(.success(objectResponse))
+                return
+            } catch let error {
+                completion(.error(MyError(msg: error.localizedDescription)))
+                return
             }
-        })
+        }
+        remoteTask.resume()
     }
 }
