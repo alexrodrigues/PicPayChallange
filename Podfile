@@ -4,8 +4,6 @@ target 'PicPayChallange' do
   inhibit_all_warnings!
 
   # Pods for PicPayChallange
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
   pod 'SwiftLint'
   pod 'Kingfisher', '~> 5.0'
   
