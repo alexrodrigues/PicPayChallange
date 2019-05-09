@@ -6,6 +6,7 @@ target 'PicPayChallange' do
   # Pods for PicPayChallange
   pod 'SwiftLint'
   pod 'Kingfisher', '~> 5.0'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
   
   pod 'Reveal-SDK', :configurations => ['Debug']
 

@@ -10,10 +10,30 @@ import UIKit
 
 class NewCardViewController: UIViewController {
 
+    // MARK: - Variables
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var viewContainer: UIView!
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
     }
     
+    // MARK: - Presentation
+    
+    private func configureView() {
+        let tapGestureResignation = UITapGestureRecognizer(target: self, action: #selector(NewCardViewController.hideKeyboards))
+        tapGestureResignation.numberOfTapsRequired = 1
+        viewContainer.addGestureRecognizer(tapGestureResignation)
+    }
+    
+    @objc func hideKeyboards() {
+        view.endEditing(true)
+    }
 }
 
 // MARK: Instantiate from nib
