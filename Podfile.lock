@@ -1,4 +1,9 @@
 PODS:
+  - KIF (3.7.7):
+    - KIF/Core (= 3.7.7)
+  - KIF/Core (3.7.7)
+  - KIF/IdentifierTests (3.7.7):
+    - KIF/Core
   - Kingfisher (5.3.1)
   - Reveal-SDK (21)
   - RxBlocking (4.5.0):
@@ -10,6 +15,8 @@ PODS:
   - SwiftLint (0.31.0)
 
 DEPENDENCIES:
+  - KIF
+  - KIF/IdentifierTests
   - Kingfisher (~> 5.0)
   - Reveal-SDK
   - RxBlocking (~> 4.0)
@@ -19,6 +26,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - KIF
     - Kingfisher
     - Reveal-SDK
     - RxBlocking
@@ -28,6 +36,7 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  KIF: 6f525b18d4cca3d6445f3c5d683294e9157bd3f4
   Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
   Reveal-SDK: 3523e0eb7c562811c51bb71da6e523a6373702c8
   RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
@@ -36,6 +45,6 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 
-PODFILE CHECKSUM: fbd4bd2af4dfa69e6a211b595c2ae78b717e6435
+PODFILE CHECKSUM: ed39e953648e57bd50d584d7db07a8e40478ce1c
 
 COCOAPODS: 1.6.1

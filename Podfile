@@ -21,6 +21,9 @@ target 'PicPayChallange' do
   target 'PicPayChallangeUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'KIF', :configurations => ['Debug']
+    pod 'KIF/IdentifierTests', :configurations => ['Debug']
+    
   end
 
 end
