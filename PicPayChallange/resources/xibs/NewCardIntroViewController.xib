@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController title="Introdução" id="dSy-ho-Zad" customClass="NewCardIntroViewController" customModule="PicPayChallange" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="shC-R2-7fM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHX-aC-3Ac">
+                        <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="35o-nl-nV4">
+                                <rect key="frame" x="69" y="296" width="276" height="166.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-empty-intro" translatesAutoresizingMaskIntoConstraints="NO" id="ns2-UY-WfH">
+                                        <rect key="frame" x="130" y="0.0" width="16" height="16"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSS-GT-aLT">
+                                        <rect key="frame" x="18.5" y="32" width="239" height="57.5"/>
+                                        <string key="text">Cadastre um cartão
+de crédito</string>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-WL-4ht">
+                                        <rect key="frame" x="0.0" y="105.5" width="276" height="61"/>
+                                        <string key="text">Para fazer pagamento para outras
+pessoas você precisa cadastrar um
+cartão de crédito pessoal</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WU6-x1-9V0">
+                                <rect key="frame" x="16" y="752" width="382" height="50"/>
+                                <color key="backgroundColor" red="0.064085997641086578" green="0.77838796377182007" blue="0.43473443388938904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jIJ-AI-UKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <state key="normal" title="Cadastrar Cartão">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp" destination="dSy-ho-Zad" eventType="touchUpInside" id="kFz-Wf-5fz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WU6-x1-9V0" secondAttribute="trailing" constant="16" id="0GR-rT-O45"/>
+                            <constraint firstItem="35o-nl-nV4" firstAttribute="centerX" secondItem="QHX-aC-3Ac" secondAttribute="centerX" id="LCh-Vj-PAE"/>
+                            <constraint firstAttribute="bottom" secondItem="WU6-x1-9V0" secondAttribute="bottom" constant="16" id="QD0-fO-JRE"/>
+                            <constraint firstItem="WU6-x1-9V0" firstAttribute="leading" secondItem="QHX-aC-3Ac" secondAttribute="leading" constant="16" id="dgz-Qr-xWp"/>
+                            <constraint firstItem="35o-nl-nV4" firstAttribute="centerY" secondItem="QHX-aC-3Ac" secondAttribute="centerY" constant="-30" id="vTZ-lO-KNq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MQw-cv-red" firstAttribute="bottom" secondItem="QHX-aC-3Ac" secondAttribute="bottom" id="Ryy-KF-Nev"/>
+                    <constraint firstItem="MQw-cv-red" firstAttribute="trailing" secondItem="QHX-aC-3Ac" secondAttribute="trailing" id="Tva-MO-Ku6"/>
+                    <constraint firstItem="QHX-aC-3Ac" firstAttribute="leading" secondItem="MQw-cv-red" secondAttribute="leading" id="Yjc-bK-eYU"/>
+                    <constraint firstItem="QHX-aC-3Ac" firstAttribute="top" secondItem="MQw-cv-red" secondAttribute="top" id="fFm-bH-We0"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="MQw-cv-red"/>
+            </view>
+            <point key="canvasLocation" x="-289.85507246376812" y="-56.25"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="card-empty-intro" width="239" height="169"/>
+    </resources>
+</document>

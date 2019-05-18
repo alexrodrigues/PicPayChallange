@@ -6,6 +6,7 @@ PODS:
   - RxSwift (4.5.0)
   - RxTest (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
+  - SkyFloatingLabelTextField (3.6.0)
   - SwiftLint (0.31.0)
 
 DEPENDENCIES:
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - Reveal-SDK
   - RxBlocking (~> 4.0)
   - RxTest (~> 4.0)
+  - SkyFloatingLabelTextField (~> 3.0)
   - SwiftLint
 
 SPEC REPOS:
@@ -22,6 +24,7 @@ SPEC REPOS:
     - RxBlocking
     - RxSwift
     - RxTest
+    - SkyFloatingLabelTextField
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -30,8 +33,9 @@ SPEC CHECKSUMS:
   RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 
-PODFILE CHECKSUM: c916308c434dceeb6a98bce3d258a455915b210d
+PODFILE CHECKSUM: fbd4bd2af4dfa69e6a211b595c2ae78b717e6435
 
 COCOAPODS: 1.6.1

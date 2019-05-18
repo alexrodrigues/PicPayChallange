@@ -19,12 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigation.navigationBar.barTintColor = .black
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigation.navigationBar.tintColor = .white
         return navigation
     }()
     
     private lazy var contactsViewController: ContactsViewController = {
        let contactVC = ContactsViewController()
-        contactVC.title = "Contacts"
+        contactVC.title = "Contatos"
         return contactVC
     }()
 

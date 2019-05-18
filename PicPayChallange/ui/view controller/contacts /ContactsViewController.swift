@@ -47,23 +47,22 @@ class ContactsViewController: UIViewController, ViewConfiguration {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.initializeVariables()
     }
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        self.initializeVariables()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeVariables()
         setupViews()
         registerCells()
         fetch()
     }
     
     private func initializeVariables() {
-        contactViewModel = ContactsViewModel()
+        contactViewModel = ContactsViewModel(with: navigationController)
         contactsCanFilter = [UserViewModel]()
     }
     
@@ -129,6 +128,11 @@ extension ContactsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        contactViewModel.navigate()
     }
 }
 
