@@ -10,6 +10,10 @@ import UIKit
 
 class NewCardIntroViewController: UIViewController {
     
+    // MARK: - Outlets
+    
+    @IBOutlet weak var procesedButton: UIButton!
+    
     // MARK: - Variables
     
     private var viewModel: NewCardIntroViewModel!
@@ -23,6 +27,7 @@ class NewCardIntroViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel = NewCardIntroViewModel(with: navigationController)
+        procesedButton.receiveAccessibilityIdentifier(identifier: .newCardProcessedButton)
     }
     
     // MARK: - IBActions

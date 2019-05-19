@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var navigation = UINavigationController()
         navigation.navigationBar.prefersLargeTitles = true
         navigation.navigationBar.barTintColor = .black
+        navigation.navigationBar.receiveAccessibilityIdentifier(identifier: .navigationbar)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigation.navigationBar.tintColor = .white

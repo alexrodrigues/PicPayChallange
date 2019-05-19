@@ -79,6 +79,9 @@ cartão de crédito pessoal</string>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="MQw-cv-red"/>
             </view>
+            <connections>
+                <outlet property="procesedButton" destination="WU6-x1-9V0" id="3J0-EG-8Gm"/>
+            </connections>
             <point key="canvasLocation" x="-289.85507246376812" y="-56.25"/>
         </viewController>
     </objects>
