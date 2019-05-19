@@ -11,10 +11,12 @@
 		04121E9A226258D300BAB6D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04121E99226258D300BAB6D1 /* Assets.xcassets */; };
 		04121E9D226258D300BAB6D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04121E9B226258D300BAB6D1 /* LaunchScreen.storyboard */; };
 		04121EA8226258D300BAB6D1 /* PicPayChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121EA7226258D300BAB6D1 /* PicPayChallangeTests.swift */; };
-		04121EB3226258D300BAB6D1 /* PicPayChallangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121EB2226258D300BAB6D1 /* PicPayChallangeUITests.swift */; };
 		04121ECB22625D6900BAB6D1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */; };
 		04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */; };
 		04121ED12262603A00BAB6D1 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */; };
+		046DABF022918D5F00FA9C36 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DABEE22918D5F00FA9C36 /* AccessibilityIdentifiers.swift */; };
+		046DABF122918D5F00FA9C36 /* UI+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DABEF22918D5F00FA9C36 /* UI+Accessibility.swift */; };
+		046DABFB22918F5300FA9C36 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DABFA22918F5300FA9C36 /* UITests.swift */; };
 		046FB59C2282779E00164A33 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB59B2282779E00164A33 /* String+Extensions.swift */; };
 		046FB59E2282788900164A33 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB59D2282788900164A33 /* ViewController+Extensions.swift */; };
 		046FB5A122827BF100164A33 /* ContactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FB5A022827BF100164A33 /* ContactsCoordinator.swift */; };
@@ -36,7 +38,6 @@
 		04BB4E11227DD6E1006B1D50 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E10227DD6E1006B1D50 /* UserViewModel.swift */; };
 		04BB4E13227DD8BD006B1D50 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E12227DD8BD006B1D50 /* ContactsViewModel.swift */; };
 		04BB4E16227DE547006B1D50 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB4E15227DE547006B1D50 /* ContactCell.swift */; };
-		5C137E8ABF597C44DF381F91 /* Pods_PicPayChallangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1472683F7829A56C8EF2DB /* Pods_PicPayChallangeUITests.framework */; };
 		C76EA579F13E870782021755 /* Pods_PicPayChallangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D426E71DDDBCD676CC540061 /* Pods_PicPayChallangeTests.framework */; };
 		EE186E19D6134B7761C705A6 /* Pods_PicPayChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9485D7710BD870384BA902BE /* Pods_PicPayChallange.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +50,7 @@
 			remoteGlobalIDString = 04121E8E226258D100BAB6D1;
 			remoteInfo = PicPayChallange;
 		};
-		04121EAF226258D300BAB6D1 /* PBXContainerItemProxy */ = {
+		046DABFD22918F5300FA9C36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04121E87226258D100BAB6D1 /* Project object */;
 			proxyType = 1;
@@ -67,12 +68,16 @@
 		04121EA3226258D300BAB6D1 /* PicPayChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicPayChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04121EA7226258D300BAB6D1 /* PicPayChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicPayChallangeTests.swift; sourceTree = "<group>"; };
 		04121EA9226258D300BAB6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04121EAE226258D300BAB6D1 /* PicPayChallangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicPayChallangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04121EB2226258D300BAB6D1 /* PicPayChallangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicPayChallangeUITests.swift; sourceTree = "<group>"; };
 		04121EB4226258D300BAB6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04121ECA22625D6900BAB6D1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		04121ECE22625FD800BAB6D1 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		04121ED02262603A00BAB6D1 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+		046DABEE22918D5F00FA9C36 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		046DABEF22918D5F00FA9C36 /* UI+Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+Accessibility.swift"; sourceTree = "<group>"; };
+		046DABF222918F1100FA9C36 /* PicPayChallangeUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPayChallangeUITests.swift; sourceTree = "<group>"; };
+		046DABF822918F5200FA9C36 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046DABFA22918F5300FA9C36 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		046DABFC22918F5300FA9C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046FB59B2282779E00164A33 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		046FB59D2282788900164A33 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		046FB5A022827BF100164A33 /* ContactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCoordinator.swift; sourceTree = "<group>"; };
@@ -122,11 +127,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04121EAB226258D300BAB6D1 /* Frameworks */ = {
+		046DABF522918F5200FA9C36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C137E8ABF597C44DF381F91 /* Pods_PicPayChallangeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +143,7 @@
 				04121E91226258D100BAB6D1 /* PicPayChallange */,
 				04121EA6226258D300BAB6D1 /* PicPayChallangeTests */,
 				04121EB1226258D300BAB6D1 /* PicPayChallangeUITests */,
+				046DABF922918F5300FA9C36 /* UITests */,
 				04121E90226258D100BAB6D1 /* Products */,
 				D86F73F9C4BF54E40762B8F1 /* Pods */,
 				DDA516EA2359298E92F64564 /* Frameworks */,
@@ -150,7 +155,7 @@
 			children = (
 				04121E8F226258D100BAB6D1 /* PicPayChallange.app */,
 				04121EA3226258D300BAB6D1 /* PicPayChallangeTests.xctest */,
-				04121EAE226258D300BAB6D1 /* PicPayChallangeUITests.xctest */,
+				046DABF822918F5200FA9C36 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +189,7 @@
 		04121EB1226258D300BAB6D1 /* PicPayChallangeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				04121EB2226258D300BAB6D1 /* PicPayChallangeUITests.swift */,
+				046DABF222918F1100FA9C36 /* PicPayChallangeUITests.swift */,
 				04121EB4226258D300BAB6D1 /* Info.plist */,
 			);
 			path = PicPayChallangeUITests;
@@ -279,6 +284,24 @@
 			path = "view coding";
 			sourceTree = "<group>";
 		};
+		046DABED22918D0D00FA9C36 /* accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				046DABEE22918D5F00FA9C36 /* AccessibilityIdentifiers.swift */,
+				046DABEF22918D5F00FA9C36 /* UI+Accessibility.swift */,
+			);
+			path = accessibility;
+			sourceTree = "<group>";
+		};
+		046DABF922918F5300FA9C36 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				046DABFA22918F5300FA9C36 /* UITests.swift */,
+				046DABFC22918F5300FA9C36 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		046FB59F22827BE000164A33 /* coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +340,7 @@
 		04BB4E00227DCE05006B1D50 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				046DABED22918D0D00FA9C36 /* accessibility */,
 				04BB4E01227DCE29006B1D50 /* extensions */,
 			);
 			path = util;
@@ -418,23 +442,22 @@
 			productReference = 04121EA3226258D300BAB6D1 /* PicPayChallangeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04121EAD226258D300BAB6D1 /* PicPayChallangeUITests */ = {
+		046DABF722918F5200FA9C36 /* UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04121EBD226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallangeUITests" */;
+			buildConfigurationList = 046DABFF22918F5300FA9C36 /* Build configuration list for PBXNativeTarget "UITests" */;
 			buildPhases = (
-				043B8FBA7FDD9284A2C50CE6 /* [CP] Check Pods Manifest.lock */,
-				04121EAA226258D300BAB6D1 /* Sources */,
-				04121EAB226258D300BAB6D1 /* Frameworks */,
-				04121EAC226258D300BAB6D1 /* Resources */,
+				046DABF422918F5200FA9C36 /* Sources */,
+				046DABF522918F5200FA9C36 /* Frameworks */,
+				046DABF622918F5200FA9C36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				04121EB0226258D300BAB6D1 /* PBXTargetDependency */,
+				046DABFE22918F5300FA9C36 /* PBXTargetDependency */,
 			);
-			name = PicPayChallangeUITests;
-			productName = PicPayChallangeUITests;
-			productReference = 04121EAE226258D300BAB6D1 /* PicPayChallangeUITests.xctest */;
+			name = UITests;
+			productName = UITests;
+			productReference = 046DABF822918F5200FA9C36 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -454,8 +477,8 @@
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 04121E8E226258D100BAB6D1;
 					};
-					04121EAD226258D300BAB6D1 = {
-						CreatedOnToolsVersion = 10.2;
+					046DABF722918F5200FA9C36 = {
+						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 04121E8E226258D100BAB6D1;
 					};
 				};
@@ -475,7 +498,7 @@
 			targets = (
 				04121E8E226258D100BAB6D1 /* PicPayChallange */,
 				04121EA2226258D300BAB6D1 /* PicPayChallangeTests */,
-				04121EAD226258D300BAB6D1 /* PicPayChallangeUITests */,
+				046DABF722918F5200FA9C36 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -499,7 +522,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04121EAC226258D300BAB6D1 /* Resources */ = {
+		046DABF622918F5200FA9C36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -509,28 +532,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		043B8FBA7FDD9284A2C50CE6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PicPayChallangeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		04BB4E08227DD1CF006B1D50 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,6 +655,7 @@
 			files = (
 				04BB4E16227DE547006B1D50 /* ContactCell.swift in Sources */,
 				04BB4E05227DCE8C006B1D50 /* URLRequest+Extensions.swift in Sources */,
+				046DABF122918D5F00FA9C36 /* UI+Accessibility.swift in Sources */,
 				046FB5B02282839D00164A33 /* NewCardCoordinator.swift in Sources */,
 				046FB5AA2282829400164A33 /* NewCardViewController.swift in Sources */,
 				04121ECF22625FD800BAB6D1 /* ViewConfiguration.swift in Sources */,
@@ -667,6 +669,7 @@
 				046FB5A122827BF100164A33 /* ContactsCoordinator.swift in Sources */,
 				04BB4E07227DD153006B1D50 /* User.swift in Sources */,
 				04BB4E0A227DD349006B1D50 /* UserService.swift in Sources */,
+				046DABF022918D5F00FA9C36 /* AccessibilityIdentifiers.swift in Sources */,
 				04BB4E0E227DD40B006B1D50 /* UserFactory.swift in Sources */,
 				04BB4DFF227DCD58006B1D50 /* ApiDefinitions.swift in Sources */,
 				046FB59C2282779E00164A33 /* String+Extensions.swift in Sources */,
@@ -686,11 +689,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04121EAA226258D300BAB6D1 /* Sources */ = {
+		046DABF422918F5200FA9C36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04121EB3226258D300BAB6D1 /* PicPayChallangeUITests.swift in Sources */,
+				046DABFB22918F5300FA9C36 /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,10 +705,10 @@
 			target = 04121E8E226258D100BAB6D1 /* PicPayChallange */;
 			targetProxy = 04121EA4226258D300BAB6D1 /* PBXContainerItemProxy */;
 		};
-		04121EB0226258D300BAB6D1 /* PBXTargetDependency */ = {
+		046DABFE22918F5300FA9C36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04121E8E226258D100BAB6D1 /* PicPayChallange */;
-			targetProxy = 04121EAF226258D300BAB6D1 /* PBXContainerItemProxy */;
+			targetProxy = 046DABFD22918F5300FA9C36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -919,20 +922,18 @@
 			};
 			name = Release;
 		};
-		04121EBE226258D300BAB6D1 /* Debug */ = {
+		046DAC0022918F5300FA9C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BF6771DFC7FF3FD5D630EEF /* Pods-PicPayChallangeUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJ28CBRTR9;
-				INFOPLIST_FILE = PicPayChallangeUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallangeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -940,20 +941,18 @@
 			};
 			name = Debug;
 		};
-		04121EBF226258D300BAB6D1 /* Release */ = {
+		046DAC0122918F5300FA9C36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58900A169793DAC2B9100B23 /* Pods-PicPayChallangeUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJ28CBRTR9;
-				INFOPLIST_FILE = PicPayChallangeUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.PicPayChallangeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.alexrodrigues.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -991,11 +990,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04121EBD226258D300BAB6D1 /* Build configuration list for PBXNativeTarget "PicPayChallangeUITests" */ = {
+		046DABFF22918F5300FA9C36 /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04121EBE226258D300BAB6D1 /* Debug */,
-				04121EBF226258D300BAB6D1 /* Release */,
+				046DAC0022918F5300FA9C36 /* Debug */,
+				046DAC0122918F5300FA9C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

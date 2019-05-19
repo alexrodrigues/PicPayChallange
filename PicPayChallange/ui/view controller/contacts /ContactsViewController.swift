@@ -27,6 +27,7 @@ class ContactsViewController: UIViewController, ViewConfiguration {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorColor = UIColor(white: 1.0, alpha: 0.6)
         tableView.backgroundColor = .clear
+        tableView.receiveAccessibilityIdentifier(identifier: .homeTableView)
         return tableView
     }()
     
